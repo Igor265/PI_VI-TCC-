@@ -38,6 +38,21 @@ mix.scripts([
     'resources/js/template/plugins.bundle.js',
 ], 'public/js/essential.js').version();
 
+/**
+ * AUTH
+ */
+mix.styles([
+    'resources/js/auth/login.js',
+], 'public/js/auth/login.js').version();
+
+mix.styles([
+    'resources/js/auth/forgot-password.js',
+], 'public/js/auth/forgot-password.js').version();
+
+mix.styles([
+    'resources/js/auth/reset-password.js',
+], 'public/js/auth/reset-password.js').version();
+
 /*
  |--------------------------------------------------------------------------
  | STYLES

@@ -56,61 +56,32 @@
 {{--</x-guest-layout>--}}
 
 <!DOCTYPE html>
-<!--
-Product Name: Metronic - Bootstrap 4 HTML Multi-purpose Admin Dashboard ThemeAuthor: KeenThemes
-Purchase: https://1.envato.market/EA4JPWebsite: http://www.keenthemes.com/
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.-->
-<html lang="en">
-<!--begin::Head-->
 <head><base href="../../../">
     <meta charset="utf-8" />
-    <title>Metronic Theme | Keenthemes</title>
+    <title>InnValue | Login TCC</title>
     <meta name="description" content="Craft admin dashboard live demo. Check out all the features of the admin panel. A large number of settings, additional services and widgets." />
     <meta name="keywords" content="Craft, bootstrap, Angular 10, Vue, React, Laravel, admin themes, free admin themes, bootstrap admin, bootstrap dashboard" />
     <link rel="canonical" href="Https://preview.keenthemes.com/start" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
-    <!--begin::Fonts-->
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/517511609866911753/856350967237967892/Sem_nome.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
-    <!--end::Fonts-->
-    <!--begin::Global Stylesheets Bundle(used by all pages)-->
-    <!--    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" /> -->
-    <!--    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />-->
     <link href="{{ mix('css/essential.css')}}" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
 </head>
-<!--end::Head-->
-<!--begin::Body-->
 <body id="kt_body" class="bg-white header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed toolbar-tablet-and-mobile-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px">
-<!--begin::Main-->
 <div class="d-flex flex-column flex-root">
-    <!--begin::Authentication - Sign-in -->
     <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed" style="background-size1: 100% 50%; background-image: url(assets/media/svg/illustrations/progress.svg)">
-        <!--begin::Content-->
         <div class="d-flex flex-center flex-column flex-column-fluid pb-lg-20">
-            <!--begin::Logo-->
             <a >
                 <img alt="Logo" src="https://cdn.discordapp.com/attachments/517511609866911753/856345329887608832/Maior.png" class="h-250px" />
             </a>
-            <!--end::Logo-->
-            <!--begin::Wrapper-->
             <div class="w-lg-500px bg-white rounded shadow-sm p-10 p-lg-15 mx-auto">
-                <!--begin::Form-->
                 <form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" method="POST" action="{{ route('login') }}">
                 @csrf
-                <!--begin::Heading-->
                     <div class="text-center mb-10">
-                        <!--begin::Title-->
                         <h1 class="text-dark mb-3">InnValueTCC</h1>
-                        <!--end::Title-->
-                        <!--begin::Link-->
                         <div class="text-gray-400 fw-bold fs-4">Novo por Aqui?
                             <a href="{{ route('register') }}" class="link-primary fw-bolder">Crie sua Conta</a></div>
-                        <!--end::Link-->
                     </div>
                     <!--begin::Heading-->
                     <!--begin::Input group-->
@@ -186,11 +157,11 @@ License: For each use you must have a valid license purchased only from above li
 <!--<script src="assets/plugins/global/plugins.bundle.js"></script>-->
 <!--<script src="assets/js/scripts.bundle.js"></script>-->
 <script src="{{ mix('js/essential.js') }}" type="text/javascript"></script>
+<script src="{{ mix('js/auth/login.js') }}" type="text/javascript"></script>
 <!--end::Global Javascript Bundle-->
 <!--begin::Page Custom Javascript(used by this page)-->
-<script src="assets/js/custom/authentication/sign-in/general.js"></script>
+{{--<script src="assets/js/custom/authentication/sign-in/general.js"></script>--}}
 <!--end::Page Custom Javascript-->
 <!--end::Javascript-->
 </body>
 <!--end::Body-->
-</html>
