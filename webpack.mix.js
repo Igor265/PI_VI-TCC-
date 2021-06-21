@@ -23,3 +23,31 @@ mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css', 'pub
  |--------------------------------------------------------------------------
  */
 mix.copyDirectory('resources/assets/images', 'public/images');
+
+/*
+ |--------------------------------------------------------------------------
+ | SCRIPTS
+ |--------------------------------------------------------------------------
+ */
+
+/**
+ * ESSENTIAL
+ */
+mix.scripts([
+    'resources/js/template/scripts.bundle.js',
+    'resources/js/template/plugins.bundle.js',
+], 'public/js/essential.js').version();
+
+/*
+ |--------------------------------------------------------------------------
+ | STYLES
+ |--------------------------------------------------------------------------
+ */
+
+/**
+ * ESSENTIAL
+ */
+mix.styles([
+    'resources/css/template/style.bundle.css',
+    'resources/css/template/plugins.bundle.css',
+], 'public/css/essential.css').version();
